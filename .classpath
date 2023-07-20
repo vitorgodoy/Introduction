@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="C:/Users/u6070908/OneDrive - Thomson Reuters Incorporated/Desktop/Selenium Course/selenium-java-3.141.59/client-combined-3.141.59.jar" sourcepath="src"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/u6070908/OneDrive - Thomson Reuters Incorporated/Desktop/Selenium Course/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/u6070908/OneDrive - Thomson Reuters Incorporated/Desktop/Selenium Course/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
@@ -10,5 +19,10 @@
 	<classpathentry kind="lib" path="C:/Users/u6070908/OneDrive - Thomson Reuters Incorporated/Desktop/Selenium Course/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/u6070908/OneDrive - Thomson Reuters Incorporated/Desktop/Selenium Course/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/u6070908/OneDrive - Thomson Reuters Incorporated/Desktop/Selenium Course/testng-6.7.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
