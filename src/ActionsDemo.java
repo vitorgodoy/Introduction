@@ -26,7 +26,7 @@ public class ActionsDemo {
 		
 		//pausa o mouse no campo de pesquisa, segura o shift e envia hello, e depois seleciona a palavra
 		a.moveToElement(pesquisa).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
-		
+		//teste
 		
 		
 		
