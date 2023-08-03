@@ -30,7 +30,7 @@ public class GetChromeLink {
 		q.submit();
 		
 		// encontrar o resultado que eu quero
-		driver.findElementByPartialLinkText("reis").click();
+		driver.findElement(By.partialLinkText("reis")).click();
 		//driver.findElement(By.partialLinkText("Vivara")).click();
 
 	}
