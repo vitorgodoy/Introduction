@@ -1,0 +1,515 @@
+!SESSION 2023-08-15 17:55:56.207 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.14.1
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2023-08-15 17:55:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [275]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [292]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [62]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2023-08-15 17:55:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [277]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [275]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [292]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [62]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2023-08-15 17:55:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [292]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [62]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.hudson.core 4 0 2023-08-15 17:55:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.core [302]
+  Unresolved requirement: Import-Package: org.apache.http.cookie; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol"
+       org.apache.httpcomponents.httpclient [42]
+         Unresolved requirement: Import-Package: net.sf.ehcache; version="[2.6.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: net.spy.memcached; version="[2.12.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.apache.http.concurrent; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.concurrent; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"
+              org.apache.httpcomponents.httpcore [44]
+         Unresolved requirement: Import-Package: org.apache.http.impl.entity; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.impl.entity; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; x-internal:="true"; uses:="org.apache.http,org.apache.http.entity,org.apache.http.io"
+         Unresolved requirement: Import-Package: org.apache.http.util; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.util; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http"
+         Unresolved requirement: Import-Package: org.apache.http.impl; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.impl; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; x-internal:="true"; uses:="org.apache.http,org.apache.http.config,org.apache.http.entity,org.apache.http.impl.entity,org.apache.http.io,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.impl.io; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; x-internal:="true"; uses:="org.apache.http,org.apache.http.config,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.util"
+         Unresolved requirement: Import-Package: org.apache.http.entity; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.entity; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http"
+         Unresolved requirement: Import-Package: org.apache.http.message; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.message; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params,org.apache.http.util"
+         Unresolved requirement: Import-Package: org.apache.http.pool; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.pool; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http.concurrent"
+         Unresolved requirement: Import-Package: org.apache.http.io; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.io; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.util"
+         Unresolved requirement: Import-Package: org.apache.http.protocol; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params"
+         Unresolved requirement: Import-Package: org.apache.http; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http.params,org.apache.http.protocol,org.apache.http.util"
+         Unresolved requirement: Import-Package: org.apache.http.ssl; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="javax.net.ssl"
+         Unresolved requirement: Import-Package: org.apache.http.config; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.config; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"
+         Unresolved requirement: Import-Package: org.apache.http.params; version="[4.4.10,4.5.0)"
+           -> Export-Package: org.apache.http.params; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.config"
+  Unresolved requirement: Import-Package: org.apache.http.client.entity; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.client.entity; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.entity"
+  Unresolved requirement: Import-Package: com.google.gson; version="[2.7.0,2.9.0)"
+    -> Export-Package: com.google.gson; bundle-symbolic-name="com.google.gson"; bundle-version="2.8.2.v20180104-1110"; version="2.8.2"; uses:="com.google.gson.internal,com.google.gson.reflect,com.google.gson.stream"
+       com.google.gson [6]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.8.0,3.0.0)"
+           -> Export-Package: com.google.gson; bundle-symbolic-name="com.google.gson"; bundle-version="2.10.1"; version="2.10.1"; uses:="com.google.gson.reflect,com.google.gson.stream"
+              com.google.gson [542]
+                Unresolved requirement: Import-Package: com.google.gson.annotations
+                  -> Export-Package: com.google.gson.annotations; bundle-symbolic-name="com.google.gson"; bundle-version="2.8.2.v20180104-1110"; version="2.8.2"
+  Unresolved requirement: Import-Package: org.apache.http.util; version="[4.4.4,4.5.0)"
+    -> Export-Package: org.apache.http.util; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http"
+  Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.impl.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http.message; version="[4.4.4,4.5.0)"
+    -> Export-Package: org.apache.http.message; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params,org.apache.http.util"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.http; version="[4.4.4,4.5.0)"
+    -> Export-Package: org.apache.http; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http.params,org.apache.http.protocol,org.apache.http.util"
+  Unresolved requirement: Import-Package: org.apache.http.protocol; version="[4.4.4,4.5.0)"
+    -> Export-Package: org.apache.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params"
+  Unresolved requirement: Import-Package: org.apache.http.client.methods; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.client.methods; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.hudson.ui 4 0 2023-08-15 17:55:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.ui [303]
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.discovery; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.discovery; bundle-version="2.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.jmdns; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.hudson.core
+    -> Bundle-SymbolicName: org.eclipse.mylyn.hudson.core; bundle-version="1.16.0.v20180403-2055"; singleton:="true"
+       org.eclipse.mylyn.hudson.core [302]
+         Unresolved requirement: Import-Package: org.apache.http.cookie; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol"
+              org.apache.httpcomponents.httpclient [42]
+                Unresolved requirement: Import-Package: net.sf.ehcache; version="[2.6.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: net.spy.memcached; version="[2.12.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: org.apache.http.concurrent; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.concurrent; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"
+                     org.apache.httpcomponents.httpcore [44]
+                Unresolved requirement: Import-Package: org.apache.http.impl.entity; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.impl.entity; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; x-internal:="true"; uses:="org.apache.http,org.apache.http.entity,org.apache.http.io"
+                Unresolved requirement: Import-Package: org.apache.http.util; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.util; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http"
+                Unresolved requirement: Import-Package: org.apache.http.impl; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.impl; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; x-internal:="true"; uses:="org.apache.http,org.apache.http.config,org.apache.http.entity,org.apache.http.impl.entity,org.apache.http.io,org.apache.http.params,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.impl.io; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; x-internal:="true"; uses:="org.apache.http,org.apache.http.config,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.util"
+                Unresolved requirement: Import-Package: org.apache.http.entity; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.entity; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http"
+                Unresolved requirement: Import-Package: org.apache.http.message; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.message; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params,org.apache.http.util"
+                Unresolved requirement: Import-Package: org.apache.http.pool; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.pool; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http.concurrent"
+                Unresolved requirement: Import-Package: org.apache.http.io; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.io; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.config,org.apache.http.util"
+                Unresolved requirement: Import-Package: org.apache.http.protocol; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params"
+                Unresolved requirement: Import-Package: org.apache.http; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http.params,org.apache.http.protocol,org.apache.http.util"
+                Unresolved requirement: Import-Package: org.apache.http.ssl; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="javax.net.ssl"
+                Unresolved requirement: Import-Package: org.apache.http.config; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.config; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"
+                Unresolved requirement: Import-Package: org.apache.http.params; version="[4.4.10,4.5.0)"
+                  -> Export-Package: org.apache.http.params; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.config"
+         Unresolved requirement: Import-Package: org.apache.http.client.entity; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.client.entity; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.entity"
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.7.0,2.9.0)"
+           -> Export-Package: com.google.gson; bundle-symbolic-name="com.google.gson"; bundle-version="2.8.2.v20180104-1110"; version="2.8.2"; uses:="com.google.gson.internal,com.google.gson.reflect,com.google.gson.stream"
+              com.google.gson [6]
+                Unresolved requirement: Import-Package: com.google.gson; version="[2.8.0,3.0.0)"
+                  -> Export-Package: com.google.gson; bundle-symbolic-name="com.google.gson"; bundle-version="2.10.1"; version="2.10.1"; uses:="com.google.gson.reflect,com.google.gson.stream"
+                     com.google.gson [542]
+                       Unresolved requirement: Import-Package: com.google.gson.annotations
+                         -> Export-Package: com.google.gson.annotations; bundle-symbolic-name="com.google.gson"; bundle-version="2.8.2.v20180104-1110"; version="2.8.2"
+         Unresolved requirement: Import-Package: org.apache.http.util; version="[4.4.4,4.5.0)"
+           -> Export-Package: org.apache.http.util; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http"
+         Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.impl.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.message; version="[4.4.4,4.5.0)"
+           -> Export-Package: org.apache.http.message; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params,org.apache.http.util"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http; version="[4.4.4,4.5.0)"
+           -> Export-Package: org.apache.http; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http.params,org.apache.http.protocol,org.apache.http.util"
+         Unresolved requirement: Import-Package: org.apache.http.protocol; version="[4.4.4,4.5.0)"
+           -> Export-Package: org.apache.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpcore"; bundle-version="4.4.10.v20190123-2214"; version="4.4.10"; uses:="org.apache.http,org.apache.http.params"
+         Unresolved requirement: Import-Package: org.apache.http.client.methods; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.client.methods; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.6.v20190503-0009"; version="4.5.6"; uses:="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.rap.tools.launch.rwt 4 0 2023-08-15 17:55:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.rap.tools.launch.rwt [535]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jetty.webapp; bundle-version="[10.0.0,11.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jetty.webapp; bundle-version="10.0.15"
+       org.eclipse.jetty.webapp [524]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"
+           -> Provide-Capability: osgi.extender; osgi.extender="osgi.serviceloader.processor"; version:Version="1.0.0"
+         Unresolved requirement: Import-Package: org.slf4j.spi; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.spi; bundle-symbolic-name="org.slf4j.api"; bundle-version="1.7.2.v20121108-1250"; version="1.7.2"
+              org.slf4j.api [479]
+                No resolution report for the bundle.         Unresolved requirement: Import-Package: org.slf4j.event; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="2.0.7"; uses:="org.slf4j,org.slf4j.helpers"
+              slf4j.api [539]
+                Unresolved requirement: Require-Capability: osgi.serviceloader; osgi.serviceloader="org.slf4j.spi.SLF4JServiceProvider"; filter:="(osgi.serviceloader=org.slf4j.spi.SLF4JServiceProvider)"
+                  -> Provide-Capability: osgi.serviceloader; type="nop"; osgi.serviceloader="org.slf4j.spi.SLF4JServiceProvider"; register:="org.slf4j.nop.NOPServiceProvider"
+                     slf4j.nop [540]
+                       Unresolved requirement: Import-Package: org.slf4j; version="[2.0.0,3.0.0)"
+                         -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="2.0.7"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+                       Unresolved requirement: Import-Package: org.slf4j.helpers; version="[2.0.0,3.0.0)"
+                         -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="2.0.7"; uses:="org.slf4j,org.slf4j.event,org.slf4j.spi"
+                       Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.registrar)(version>=1.0.0)(!(version>=2.0.0)))"
+                         -> Provide-Capability: osgi.extender; osgi.extender="osgi.serviceloader.registrar"; version:Version="1.0.0"
+                       Unresolved requirement: Import-Package: org.slf4j.spi; version="[2.0.0,3.0.0)"
+                         -> Export-Package: org.slf4j.spi; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="2.0.7"; uses:="org.slf4j,org.slf4j.event,org.slf4j.helpers"
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+                  -> Provide-Capability: osgi.extender; osgi.extender="osgi.serviceloader.processor"; version:Version="1.0.0"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.xml; version="[10.0.15,11.0.0)"
+           -> Export-Package: org.eclipse.jetty.xml; bundle-symbolic-name="org.eclipse.jetty.xml"; bundle-version="10.0.15"; version="10.0.15"; uses:="org.eclipse.jetty.util.resource,org.xml.sax"
+              org.eclipse.jetty.xml [525]
+                Unresolved requirement: Require-Capability: osgi.serviceloader; filter:="(osgi.serviceloader=org.eclipse.jetty.xml.ConfigurationProcessorFactory)"; resolution:="optional"; cardinality:="multiple"
+                Unresolved requirement: Import-Package: org.slf4j.helpers; version="[1.7.0,3.0.0)"
+                  -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="org.slf4j.api"; bundle-version="1.7.2.v20121108-1250"; version="1.7.2"
+                Unresolved requirement: Import-Package: org.slf4j; version="[1.7.0,3.0.0)"
+                  -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="1.7.36"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+                Unresolved requirement: Import-Package: org.slf4j.event; version="[1.7.0,3.0.0)"
+                  -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="2.0.7"; uses:="org.slf4j,org.slf4j.helpers"
+                Unresolved requirement: Import-Package: org.slf4j.spi; version="[1.7.0,3.0.0)"
+                  -> Export-Package: org.slf4j.spi; bundle-symbolic-name="org.slf4j.api"; bundle-version="1.7.2.v20121108-1250"; version="1.7.2"
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"; resolution:="optional"
+                  -> Provide-Capability: osgi.extender; osgi.extender="osgi.serviceloader.processor"; version:Version="1.0.0"
+         Unresolved requirement: Import-Package: org.slf4j.helpers; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="org.slf4j.api"; bundle-version="1.7.2.v20121108-1250"; version="1.7.2"
+         Unresolved requirement: Import-Package: org.slf4j; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.7"; version="1.7.36"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+  Unresolved requirement: Require-Bundle: org.eclipse.jetty.xml; bundle-version="[10.0.0,11.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jetty.xml; bundle-version="10.0.15"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.core.databinding 4 0 2023-08-15 17:55:57.172
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.core.databinding [552]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.databinding.observable; bundle-version="[1.3.0,2.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.core.databinding.observable; bundle-version="1.13.0.v20230501-1533"
+       org.eclipse.core.databinding.observable [553]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.debug.ui.launchview 4 0 2023-08-15 17:55:57.173
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.debug.ui.launchview [554]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.di
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.di; bundle-version="1.5.0.v20230501-1823"
+       org.eclipse.e4.ui.di [555]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.e4.ui.di 4 0 2023-08-15 17:55:57.173
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.di [555]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.core.compiler.batch 4 0 2023-08-15 17:55:57.173
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.core.compiler.batch [561]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2023-08-15 17:55:58.856
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start() of bundle org.eclipse.equinox.p2.reconciler.dropins.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1780)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.NoClassDefFoundError: org/sat4j/minisat/core/PrimeImplicantStrategy
+	at org.sat4j.pb.SolverFactory.newEclipseP2(SolverFactory.java:1128)
+	at org.eclipse.equinox.internal.p2.director.Projector.encode(Projector.java:201)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getSolutionFor(SimplePlanner.java:454)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getProvisioningPlan(SimplePlanner.java:517)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.createProvisioningPlan(ProfileSynchronizer.java:764)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:203)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:144)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:444)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:179)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.sat4j.minisat.core.PrimeImplicantStrategy cannot be found by org.sat4j.pb_2.3.6.v20201214
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 27 more
+Root exception:
+java.lang.NoClassDefFoundError: org/sat4j/minisat/core/PrimeImplicantStrategy
+	at org.sat4j.pb.SolverFactory.newEclipseP2(SolverFactory.java:1128)
+	at org.eclipse.equinox.internal.p2.director.Projector.encode(Projector.java:201)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getSolutionFor(SimplePlanner.java:454)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getProvisioningPlan(SimplePlanner.java:517)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.createProvisioningPlan(ProfileSynchronizer.java:764)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:203)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:144)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:444)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:179)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1780)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.ClassNotFoundException: org.sat4j.minisat.core.PrimeImplicantStrategy cannot be found by org.sat4j.pb_2.3.6.v20201214
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 27 more
+
+!ENTRY org.eclipse.equinox.app 0 0 2023-08-15 17:55:59.023
+!MESSAGE Product org.eclipse.epp.package.java.product could not be found.
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-08-15 17:56:43.290
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\6070908'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-08-15 17:57:06.490
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:146)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:256)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.access$2(GitImportWizard.java:238)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:208)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: C:\Users\6070908\git\Introduction overlaps the workspace location: C:\Users\6070908\git\Introduction
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2023-08-15 17:57:06.490
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2023-08-15 17:57:06.490
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-08-15 17:57:06.490
+!MESSAGE C:\Users\6070908\git\Introduction overlaps the workspace location: C:\Users\6070908\git\Introduction
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-08-15 17:57:13.606
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:146)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:256)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.access$2(GitImportWizard.java:238)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:208)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: C:\Users\6070908\git\Introduction overlaps the workspace location: C:\Users\6070908\git\Introduction
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2023-08-15 17:57:13.606
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2023-08-15 17:57:13.606
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-08-15 17:57:13.606
+!MESSAGE C:\Users\6070908\git\Introduction overlaps the workspace location: C:\Users\6070908\git\Introduction
