@@ -1,5 +1,11 @@
 TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1696206009558
 quickStart=false
 tipsAndTricks=true
+=======
+platformState=1584057817962
+quickStart=false
+tipsAndTricks=false
+>>>>>>> origin/main

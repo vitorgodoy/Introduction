@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=C\:\\Users\\u6070908\\git\\Introduction\\.git;C\:\\Users\\6070908\\git\\Introduction\\.git;C\:\\Users\\6070908\\OneDrive - Thomson Reuters Incorporated\\Desktop\\Selenium Course\\Introduction\\.git;
 GitRepositoriesView.GitDirectories.relative=C\:\\Users\\u6070908\\git\\Introduction\\.git;C\:\\Users\\6070908\\git\\Introduction\\.git;.git;
 RepositorySearchDialogSearchPath=C\:\\Users\\u6070908\\git
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\6070908\\git\\Introduction\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;
+RepositorySearchDialogSearchPath=C\:\\Users\\6070908\\git
+>>>>>>> origin/main
 eclipse.preferences.version=1

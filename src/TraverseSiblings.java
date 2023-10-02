@@ -17,13 +17,13 @@ public class TraverseSiblings {
 		System.out.println(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']/parent::div")).getAttribute("class"));
 		
 		//Todays deals
-		driver.findElement(By.xpath("//a[contains(text(),\"Today's Deals\")]")).click(); //USAR COM ASPAS DUPLAS, NAO FUNCIONOU COM ASPAS SIMPLES.
+		driver.findElement(By.xpath("//a[contains(text(),\'Today's Deals\')]")).click(); //USAR COM ASPAS DUPLAS, NAO FUNCIONOU COM ASPAS SIMPLES.
 		//Todays deals +1
-		driver.findElementByXPath("//a[contains(text(),\"Today's Deals\")]/following-sibling::a[1]").click();
+		driver.findElement(By.xpath("//a[contains(text(),\'Today's Deals\')]/following-sibling::a[1]")).click();
 		//Todays deals +2
-		driver.findElementByXPath("//a[contains(text(),\"Today's Deals\")]/following-sibling::a[2]").click();
+		driver.findElement(By.xpath("//a[contains(text(),\'Today's Deals\')]/following-sibling::a[2]")).click();
 		//Todays deals +x3
-		driver.findElementByXPath("//a[contains(text(),\"Today's Deals\")]/following-sibling::a[3]").click();
+		driver.findElement(By.xpath("//a[contains(text(),\'Today's Deals\')]/following-sibling::a[3]")).click();
 		// USANDO LOCATOR TEXT - sintaxe - //TAGNAME[TEXT()='TEXTO AQUI']
 	    driver.findElement(By.xpath("//*[text()='& Orders']")).click();
 	    

@@ -12,6 +12,10 @@
 		<item value="org.eclipse.help:2.3.1400.v20230605-0440"/>
 		<item value="org.eclipse.jgit.http.apache:5.6.0.201912101111-r"/>
 		<item value="org.eclipse.jgit.lfs:5.6.0.201912101111-r"/>
+<<<<<<< HEAD
+=======
+		<item value="org.eclipse.jgit.pgm:5.6.0.201912101111-r"/>
+>>>>>>> origin/main
 		<item value="org.eclipse.jgit.ssh.apache:5.6.0.201912101111-r"/>
 		<item value="org.eclipse.jgit:5.6.0.201912101111-r"/>
 		<item value="org.eclipse.m2e.feature:2.3.0.20230523-2033"/>
@@ -50,12 +54,26 @@
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 			<item value="C:\Users\6070908\git\Introduction"/>
+<<<<<<< HEAD
 		</list>
 	</section>
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
+=======
+			<item value="C:\Users\6070908\git"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="657"/>
+		<item key="DIALOG_Y_ORIGIN" value="307"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+>>>>>>> origin/main
 		</list>
 	</section>
 </section>

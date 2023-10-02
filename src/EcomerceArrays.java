@@ -1,3 +1,4 @@
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -21,7 +22,8 @@ public class EcomerceArrays {
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		//explicit wait
-		WebDriverWait w = new WebDriverWait(driver, 5);
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
+
 
 		// array
 		String[] vegetaisClicar = {"Cucumber", "Brocolli" , "Beetroot","Carrot"};
