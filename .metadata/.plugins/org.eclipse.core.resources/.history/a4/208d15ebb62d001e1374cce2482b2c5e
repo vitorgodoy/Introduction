@@ -1,0 +1,20 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MaximizeCookie {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		//maximizar a tela
+		driver.manage().window().maximize();
+		//excluir todos os cookies antes de rodar o teste:
+		
+		
+		driver.get("http://www.google.com/");
+	}
+
+}
