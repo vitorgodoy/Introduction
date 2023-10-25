@@ -7,4 +7,22 @@
       <class name="tng.IntroductionNg2"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name = "Car Loan">
+	  <classes>
+		 <class name="tng.IntroductionNg3">
+			  <methods>
+				   <!-- linha para excluir um método específico -->
+				   <exclude name="MobileLoginCarLoan"/>
+			   </methods>
+		 </class>
+	  </classes>
+  </test>
+  
+  <test name="Home Loan">
+	  <classes>
+		   <class name="tng.IntroductionNg4"/>
+	  </classes>
+  </test>
+  
 </suite> <!-- Suite -->

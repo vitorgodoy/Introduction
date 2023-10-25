@@ -18,7 +18,7 @@ public class NewWindow {
 
 // TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "C:\\\\WebDrivers\\\\chromedriver_117_0_5938_132.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\\\WebDrivers\\\\chromedriver_118_0_5993_70.exe");
 
 		WebDriver driver = new ChromeDriver();
 

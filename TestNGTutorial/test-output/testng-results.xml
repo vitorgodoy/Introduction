@@ -1,27 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-01T21:51:23 BRT" name="Suite" finished-at="2023-10-01T21:51:23 BRT" duration-ms="42">
+  <suite started-at="2023-10-24T22:08:38 BRT" name="Suite" finished-at="2023-10-24T22:08:38 BRT" duration-ms="61">
     <groups>
     </groups>
-    <test started-at="2023-10-01T21:51:23 BRT" name="Testing Sequence" finished-at="2023-10-01T21:51:23 BRT" duration-ms="42">
+    <test started-at="2023-10-24T22:08:38 BRT" name="Testing Sequence2" finished-at="2023-10-24T22:08:38 BRT" duration-ms="61">
       <class name="tng.IntroductionNg2">
-        <test-method signature="Terceiro()[pri:0, instance:tng.IntroductionNg2@29d89d5d]" started-at="2023-10-01T21:51:23 BRT" name="Terceiro" finished-at="2023-10-01T21:51:23 BRT" duration-ms="1" status="PASS">
+        <test-method signature="Terceiro()[pri:0, instance:tng.IntroductionNg2@2f217633]" started-at="2023-10-24T22:08:38 BRT" name="Terceiro" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Terceiro -->
       </class> <!-- tng.IntroductionNg2 -->
+      <class name="tng.Annotations">
+        <test-method is-config="true" signature="Cookies()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="Cookies" finished-at="2023-10-24T22:08:38 BRT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cookies -->
+        <test-method is-config="true" signature="UseridGeneration()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="UseridGeneration" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UseridGeneration -->
+        <test-method signature="FlightBooking()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="FlightBooking" finished-at="2023-10-24T22:08:38 BRT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightBooking -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="Reportadding" finished-at="2023-10-24T22:08:38 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method is-config="true" signature="UseridGeneration()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="UseridGeneration" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UseridGeneration -->
+        <test-method signature="FlightCancel()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="FlightCancel" finished-at="2023-10-24T22:08:38 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightCancel -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="Reportadding" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method signature="OpeningBrowser()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="OpeningBrowser" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpeningBrowser -->
+        <test-method is-config="true" signature="UseridGeneration()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="UseridGeneration" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UseridGeneration -->
+        <test-method is-config="true" signature="Reportadding()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="Reportadding" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reportadding -->
+        <test-method is-config="true" signature="Cookiesclose()[pri:0, instance:tng.Annotations@35aea049]" started-at="2023-10-24T22:08:38 BRT" name="Cookiesclose" finished-at="2023-10-24T22:08:38 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cookiesclose -->
+      </class> <!-- tng.Annotations -->
+      <class name="tng.IntroductionNg3">
+        <test-method signature="LoginApiCarLoan()[pri:0, instance:tng.IntroductionNg3@5acf93bb]" started-at="2023-10-24T22:08:38 BRT" name="LoginApiCarLoan" finished-at="2023-10-24T22:08:38 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApiCarLoan -->
+        <test-method signature="MobileLoginCarLoan()[pri:0, instance:tng.IntroductionNg3@5acf93bb]" started-at="2023-10-24T22:08:38 BRT" name="MobileLoginCarLoan" finished-at="2023-10-24T22:08:38 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCarLoan -->
+        <test-method signature="WebloginCarLoan()[pri:0, instance:tng.IntroductionNg3@5acf93bb]" started-at="2023-10-24T22:08:38 BRT" name="WebloginCarLoan" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebloginCarLoan -->
+      </class> <!-- tng.IntroductionNg3 -->
+      <class name="tng.IntroductionNg4">
+        <test-method signature="LoginApiHomeLoan()[pri:0, instance:tng.IntroductionNg4@7e7be63f]" started-at="2023-10-24T22:08:38 BRT" name="LoginApiHomeLoan" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApiHomeLoan -->
+        <test-method signature="MobileLoginHomeLoan()[pri:0, instance:tng.IntroductionNg4@7e7be63f]" started-at="2023-10-24T22:08:38 BRT" name="MobileLoginHomeLoan" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginHomeLoan -->
+        <test-method signature="WebloginHomeLoan()[pri:0, instance:tng.IntroductionNg4@7e7be63f]" started-at="2023-10-24T22:08:38 BRT" name="WebloginHomeLoan" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebloginHomeLoan -->
+      </class> <!-- tng.IntroductionNg4 -->
       <class name="tng.IntroductionNg">
-        <test-method signature="Primeiro()[pri:0, instance:tng.IntroductionNg@6631f5ca]" started-at="2023-10-01T21:51:23 BRT" name="Primeiro" finished-at="2023-10-01T21:51:23 BRT" duration-ms="8" status="PASS">
+        <test-method signature="Primeiro()[pri:0, instance:tng.IntroductionNg@48f278eb]" started-at="2023-10-24T22:08:38 BRT" name="Primeiro" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Primeiro -->
-        <test-method signature="Segundo()[pri:0, instance:tng.IntroductionNg@6631f5ca]" started-at="2023-10-01T21:51:23 BRT" name="Segundo" finished-at="2023-10-01T21:51:23 BRT" duration-ms="1" status="PASS">
+        <test-method signature="Segundo()[pri:0, instance:tng.IntroductionNg@48f278eb]" started-at="2023-10-24T22:08:38 BRT" name="Segundo" finished-at="2023-10-24T22:08:38 BRT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Segundo -->
       </class> <!-- tng.IntroductionNg -->
-    </test> <!-- Testing Sequence -->
+    </test> <!-- Testing Sequence2 -->
   </suite> <!-- Suite -->
 </testng-results>

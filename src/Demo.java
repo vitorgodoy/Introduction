@@ -7,7 +7,7 @@ public class Demo {
 		
 		//Create driver object for chrome browser
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver_118_0_5993_70.exe");
 		ChromeDriver driver = new ChromeDriver();		
 		
 		driver.get("https:\\www.youtube.com"); // Hit url on browser
